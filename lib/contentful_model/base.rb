@@ -23,13 +23,7 @@ module ContentfulModel
 
     def define_getters
       fields.each do |k, v|
-        if Contentful::Constants::KNOWN_LOCALES.include?(k.to_s)
-          v.keys.each do |name|
-            define_getter(name)
-          end
-        else
-          define_getter(k)
-        end
+        define_getter(k)
       end
     end
 
