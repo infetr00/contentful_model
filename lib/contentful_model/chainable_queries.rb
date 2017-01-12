@@ -7,6 +7,10 @@ module ContentfulModel
 
     module ClassMethods
 
+      def kike
+        puts 'quique mola'
+      end
+
       def all
         raise ArgumentError, 'You need to set self.content_type in your model class' if @content_type_id.nil?
         self
