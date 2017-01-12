@@ -33,6 +33,7 @@ module ContentfulModel
       end
 
       def locale(locale_code)
+        puts 'Here goes the bum bum"
         @query << {'locale' => locale_code}
         self
       end
